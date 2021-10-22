@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+a{
+    padding: 2px;
+    margin: 1px;
+    color: black;
+    cursor: pointer;
+}
+@keyframes background{
+    form{
+        background-color: transparent;
+    }
+    to{
+        background-color: rgb(14, 70, 75);
+        border-radius: 3px;
+        color: white;
+    }
+}
+#Firsta:hover{
+    animation-name: background;
+    animation-duration: 1s;
+}
+#Seca:hover{
+    animation-name: background;
+    animation-duration: 1s;
+}
+#header{
+    position: fixed;
+    width: 96%;
+    box-shadow: 10px 9px 14px black;
+    margin: 1%;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+    background-color:rgb(38, 100, 106);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#godwrap{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+#content{
+    margin-top: 140px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#inside-content{
+    width: 96%;
+}
+#section{
+    box-shadow: 10px 9px 14px rgb(84, 133, 138);
+    background-color: rgb(74, 132, 137);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#article{
+    box-shadow: 10px 9px 14px rgb(117, 89, 138);
+    background-color: rgb(123, 81, 150);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#aside{
+    width: 90%;
+    box-shadow: 10px 9px 14px rgb(134, 138, 84);
+    background-color: rgb(212, 221, 119);
+    margin: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#footer{
+    bottom: 0%;
+    width: 96%;
+    box-shadow: 10px 9px 14px black;
+    display: flex;
+    margin-top: 0%;
+    margin: 2%;
+    height: 100px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color:rgb(12, 70, 75);
+    text-align: center;
+    align-items: center ;
+    justify-content:center;
+}
+@media (min-width: 1000px){
+    #content{
+        flex-direction: row;
+    }
+    #aside{
+        margin-top: 20px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 1000px){
+    #aside{
+        width: 90%;
+    }
+}
